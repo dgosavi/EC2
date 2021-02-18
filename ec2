@@ -1,0 +1,49 @@
+"BFLDOBASTION126BFSDEV": {
+            "Type": "AWS::EC2::Instance",
+            "Description": "EC2 Instance for CTS Team",
+            "Properties": {
+                "InstanceType": "t3.medium",
+               "ImageId": "ami-048e5f8",
+                "KeyName": {
+                    "Ref": "BFLKeyPair"
+                },
+                "SecurityGroupIds": {
+                    "Ref": "SECURITYGRP"
+                },
+                "SubnetId": {
+                    "Ref": "BFLSUBNET"
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "BFLDO-BASTION-126-DEVTEAM"
+                    },
+                    {
+                        "Key": "Users",
+                        "Value": "dhiraj.gosavi"
+                    },
+                    
+                    {
+                        "Key": "Contact-No",
+                        "Value": ""
+                    },
+                    
+                    {
+                        "Key": "ProvisionedBy",
+                        "Value": "XYZ"
+                    },
+                    {
+                        "Key": "DateofLaunch",
+                        "Value": "20-Jan-2021"
+                    },
+                    {
+                        "Key": "LOB",
+                        "Value": "MRF"
+                    },
+                    {
+                        "Key": "ServiceRQ",
+                        "Value": "SRQ00416418989"
+                    }
+                ]
+            }
+        },
